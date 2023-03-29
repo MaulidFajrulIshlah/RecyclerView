@@ -5,45 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
     <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
         app:cardMaxElevation="5dp"
         app:cardCornerRadius="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/imgNews"
-            android:layout_width="115dp"
-            android:layout_height="125dp"/>
+
         <LinearLayout
-            android:layout_marginStart="120dp"
             android:padding="15dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvNama"
-                android:text="Nama Student"
-                android:textSize="25sp"
+                android:text="Judul News"
+                android:textSize="23sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:layout_below="@+id/tvNama"
                 android:id="@+id/tvUmur"
-                android:text="Tanggal"
-                android:textSize="25sp"
+                android:text="Tanggal News"
+                android:textSize="20sp"
+                android:textStyle="italic"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
             <TextView
-                android:layout_below="@id/tvUmur"
                 android:id="@+id/tvKategori"
                 android:text="Kategori"
-                android:textSize="25sp"
+                android:textSize="18sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/imgNews"
+                android:layout_width="210dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="200dp"
+                android:cropToPadding="false"
+                android:padding="5dp"/>
 
         </LinearLayout>
+
+
 
     </androidx.cardview.widget.CardView>
 
